@@ -22,13 +22,13 @@ namespace Modding
             MelonPrefs.RegisterBool(Category, nameof(Enabled), true, "Enables the mod.");
             MelonPrefs.RegisterBool(Category, nameof(UseHandColors), true, "Use hand colors for chains.");
 
-            MelonPrefs.RegisterFloat(Category, nameof(RightR), 0.0f, "Chain color. (0 to 1)");
-            MelonPrefs.RegisterFloat(Category, nameof(RightG), 0.0f, "Chain color. (0 to 1)");
-            MelonPrefs.RegisterFloat(Category, nameof(RightB), 0.0f, "Chain color. (0 to 1)");
+            MelonPrefs.RegisterFloat(Category, nameof(RightR), 0.0f, "Chain color.[0.0,1.0,0.0,0.0]");
+            MelonPrefs.RegisterFloat(Category, nameof(RightG), 0.0f, "Chain color.[0.0,1.0,0.0,0.0]");
+            MelonPrefs.RegisterFloat(Category, nameof(RightB), 0.0f, "Chain color.[0.0,1.0,0.0,0.0]");
 
-            MelonPrefs.RegisterFloat(Category, nameof(LeftR), 0.0f, "Chain color. (0 to 1)");
-            MelonPrefs.RegisterFloat(Category, nameof(LeftG), 0.0f, "Chain color. (0 to 1)");
-            MelonPrefs.RegisterFloat(Category, nameof(LeftB), 0.0f, "Chain color. (0 to 1)");
+            MelonPrefs.RegisterFloat(Category, nameof(LeftR), 0.0f, "Chain color.[0.0,1.0,0.0,0.0]");
+            MelonPrefs.RegisterFloat(Category, nameof(LeftG), 0.0f, "Chain color.[0.0,1.0,0.0,0.0]");
+            MelonPrefs.RegisterFloat(Category, nameof(LeftB), 0.0f, "Chain color.[0.0,1.0,0.0,0.0]");
 
             OnModSettingsApplied();
         }
