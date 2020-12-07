@@ -2,20 +2,25 @@ using Harmony;
 using MelonLoader;
 using Modding;
 using System;
+using System.Reflection;
 using UnityEngine;
 
+
+
+[assembly: AssemblyVersion(ColoredChains.VERSION)]
+[assembly: AssemblyFileVersion(ColoredChains.VERSION)]
 [assembly: MelonGame("Harmonix Music Systems, Inc.", "Audica")]
-[assembly: MelonInfo(typeof(ColoredChains), "Colored Chains", "0.1.0", "octo & Alternity", "https://github.com/octoberU/ModSettings")]
+[assembly: MelonInfo(typeof(ColoredChains), "Colored Chains", "0.1.0", "octo & Alternity", "https://github.com/octoberU/ColoredChains")]
 
 namespace Modding
 {
     public class ColoredChains : MelonMod
     {
+        public const string VERSION = "0.1.1";
         public override void OnApplicationStart()
         {
             Config.RegisterConfig();
         }
-
 
         public override void OnModSettingsApplied()
         {
