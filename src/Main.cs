@@ -10,7 +10,7 @@ using UnityEngine;
 [assembly: AssemblyVersion(ColoredChains.VERSION)]
 [assembly: AssemblyFileVersion(ColoredChains.VERSION)]
 [assembly: MelonGame("Harmonix Music Systems, Inc.", "Audica")]
-[assembly: MelonInfo(typeof(ColoredChains), "Colored Chains", "0.1.0", "octo & Alternity", "https://github.com/octoberU/ColoredChains")]
+[assembly: MelonInfo(typeof(ColoredChains), "Colored Chains", ColoredChains.VERSION, "octo & Alternity", "https://github.com/octoberU/ColoredChains")]
 
 namespace Modding
 {
